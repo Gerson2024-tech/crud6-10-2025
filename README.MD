@@ -11,7 +11,7 @@ const pool = new Pool({
   port: 5432, // default PostgreSQL port
 });
 
-export { pool }; // ✅ Add this line to fix the error
+export { pool }; // 
 
 
 
