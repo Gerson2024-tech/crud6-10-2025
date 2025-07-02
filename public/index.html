@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Inventory Management System (IMS)</h1>
+    <form id="productForm" method="POST" action="/">
+        <input type="text" id="product" name="product" placeholder="product" required>
+        <input type="number" id="price" name="price" placeholder="price" required>
+        <input type="number" id="inventoryProductQuantity" name="quantity" placeholder="quantity" required min="1">
+        <button type="submit" id="sellBtn">Inventory</button>
+    </form>
+
+    <h4>Product List</h4>
+    <ul id="productList"></ul>
+     
+
+    <h1>Point of Sales (POS)</h1>
+
+    <form id="posForm">
+        <select id="productSelect" name="listSellProduct">
+            <option value="">--SELECT PRODUCT--</option>
+        </select>
+        <input type="number" id="quantity" name="quantity" placeholder="quantity">
+        <input type="number" id="cash" name="cash" placeholder="cash" required>
+        <button type="button" id="addProductBtn">Add Product</button>
+        <button type="submit" id="posSellBtn">Finalize & Print Receipt</button>
+    </form>
+
+    <h4>Sell Product List</h4>
+    <ul id="sellProductList"></ul>
+
+    <h4>Total Price</h4>
+    <p id="totalPrice"></p>
+
+    <h4>Total Change</h4>
+    <p id="totalChange"></p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
